@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Excel File Redaing through ActiveX</title>
+<script>
+var xVal = 1;
+var yVal = 2
+
+    function readdata(x,y) {
+        x = xVal;
+        y = yVal;
+        try {
+            var excel = new ActiveXObject("Excel.Application");
+            excel.Visible = false;
+            var excel_file = excel.Workbooks.Open("Create ODI from Excel SIT drawing test 15747.xlsx");// alert(excel_file.worksheets.count);
+            var excel_sheet = excel_file.Worksheets("Sheet1");
+
+            for(i=0;i<5;i++)
+            {
+               var data = excel_sheet.Cells(i,2).Value;
+                drawWithexcelValue(data);
+            }
+        }
+        catch (ex) {
+            alert(ex);
+        }
+	}
+</script>
+</head>
+<body>
+<input type="button" id="btnSubmit" onclick="readdata(1, 2)" value="Submit" />
+</body>
+</html>
