@@ -1,6 +1,6 @@
 {
-  "id": "keycloak-demo",
-  "realm": "keycloak-demo",
+  "id": "VueJS",
+  "realm": "VueJS",
   "notBefore": 0,
   "revokeRefreshToken": false,
   "refreshTokenMaxReuse": 0,

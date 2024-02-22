@@ -1,5 +1,5 @@
 {
-    "clientId": "vue-test-app",
+    "clientId": "vue-js-app",
     "rootUrl": "http://localhost:8080/*",
     "adminUrl": "http://localhost:8080/*",
     "surrogateAuthRequired": false,
