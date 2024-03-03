@@ -11,5 +11,16 @@ export default new Router({
       name: "add",
       component: () => import("./components/AddTutorial"),
     },
-  ],
+    {
+      path: "/",
+      alias: "/tutorials",
+      name: "tutorials",
+      component: () => import("./components/TutorialsList")
+    },
+    {
+      path: "/tutorials/:id",
+      name: "tutorial-details",
+      component: () => import("./components/Tutorial")
+    }
+  ]
 });
