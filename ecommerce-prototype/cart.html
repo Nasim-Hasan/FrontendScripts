@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to the CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Your Shopping Cart</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product-listing.html">Products</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cart-items">
+            <h2>Items in Your Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example of a cart item -->
+                    <tr>
+                        <td>Product Name 1</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                        </td>
+                        <td>$10.00</td>
+                        <td>$10.00</td>
+                        <td><button class="remove-btn">Remove</button></td>
+                    </tr>
+                    <!-- Additional cart items will be dynamically generated here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="cart-summary">
+            <h2>Cart Summary</h2>
+            <p>Total Cost: <span id="total-cost">$10.00</span></p>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 E-Commerce Prototype</p>
+    </footer>
+
+    <script src="js/scripts.js"></script> <!-- Link to the JavaScript file for functionality -->
+</body>
+</html>
